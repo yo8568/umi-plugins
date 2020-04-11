@@ -1,0 +1,7 @@
+{
+  "name": "@alitajs/umi-plugin-antd-plus",
+  "version": "1.0.0",
+  "description": "Umi plugin antd plus",
+  "main": "index.js",
+  "license": "MIT"
+}

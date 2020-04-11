@@ -1,29 +1,18 @@
 {
-  "name": "@alitajs/workspace",
-  "repository": "git@github.com:alitajs/umi-plugin-packages.git",
-  "author": "wangxingkang <wangxingkang@sensoro.com>",
-  "license": "MIT",
+  "name": "@alitajs/umi-plugins",
   "private": true,
-  "scripts": {
-    "bootstarp": "lerna bootstrap",
-    "build": "father-build",
-    "clean": "lerna clean --yes"
-  },
+  "description": "umi plugins",
+  "main": "index.js",
+  "repository": "git@github.com:alitajs/umi-plugins.git",
+  "author": "kang <wang_xingkang@qq.com>",
+  "license": "MIT",
   "devDependencies": {
-    "@types/lodash": "^4.14.136",
-    "@types/react": "^16.9.1",
-    "@types/react-dom": "^16.8.5",
-    "father-build": "^1.5.0",
-    "lerna": "^3.16.4",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "typescript": "^3.5.3",
-    "umi": "^2.8.17",
-    "umi-plugin-react": "^1.9.15",
-    "umi-types": "^0.3.16"
-  },
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ]
+    "@babel/core": "^7.9.0",
+    "@walrus/cli": "^1.3.0",
+    "@walrus/plugin-release": "^1.8.0",
+    "@walrus/preset-lint": "^1.1.5",
+    "@walrus/test": "^1.0.1",
+    "lerna": "^3.20.2",
+    "umi": "^3.1.1"
+  }
 }

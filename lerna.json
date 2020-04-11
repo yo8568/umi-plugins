@@ -1,17 +1,23 @@
 {
-  "npmClient": "yarn",
   "version": "independent",
+  "npmClient": "yarn",
   "useWorkspaces": true,
-  "packages": [
-    "packages/*",
-    "examples/*"
-  ],
-  "command": {
-    "publish": {
-      "npmClient": "npm",
-      "verifyAccess": false,
-      "ignoreChanges": ["*.md", "**/test/**"],
-      "message": "chore(release): publish"
-    }
-  }
+  "changelog": {
+    "repo": "umi-plugins",
+    "labels": {
+      "pr(enhancement)": ":rocket: Enhancement",
+      "pr(bug)": ":bug: Bug Fix",
+      "pr(documentation)": ":book: Documentation",
+      "pr(dependency)": ":deciduous_tree: Dependency",
+      "pr(chore)": ":turtle: Chore"
+    },
+    "cacheDir": ".changelog"
+  },
+  "ignoreChanges": [
+    "**/*.md",
+    "**/*.test.ts",
+    "**/*.e2e.ts",
+    "**/fixtures/**",
+    "**/test/**"
+  ]
 }
