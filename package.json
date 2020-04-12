@@ -6,13 +6,25 @@
   "repository": "git@github.com:alitajs/umi-plugins.git",
   "author": "kang <wang_xingkang@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "father-build",
+    "test": "walrus-test",
+    "lint:es": "walrus eslint",
+    "release": "walrus release"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@umijs/test-utils": "^3.1.1",
     "@walrus/cli": "^1.3.0",
     "@walrus/plugin-release": "^1.8.0",
     "@walrus/preset-lint": "^1.1.5",
     "@walrus/test": "^1.0.1",
+    "father-build": "^1.17.2",
     "lerna": "^3.20.2",
+    "typescript": "^3.8.3",
     "umi": "^3.1.1"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

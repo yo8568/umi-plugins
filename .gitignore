@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+npm-debug.log*
+yarn-error.log
+
+# production
+dist
+coverage
+.npmignore
+components/**/*.css
+
+# misc
+.DS_Store
+
+# editor
+/.vscode
+.idea
+
+.umi
+.cache
+public
+.rpt2_cache
+
+es
+lib
+dist

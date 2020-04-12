@@ -1,7 +1,20 @@
 {
   "name": "@alitajs/umi-plugin-antd-plus",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Umi plugin antd plus",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "umi": "3.x"
+  },
+  "dependencies": {
+    "@alitajs/antd-plus": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
